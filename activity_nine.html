@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Project</title>
+</head>
+
+<style>
+  body {
+    background-color: darkblue;
+  }
+  fieldset {
+    background-color: white;
+  }
+
+  .info {
+    color: white;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <form action="info.html" method="get">
+    <div class="info">
+      <h1>Student Information Form</h1>
+      <h5>Senior Highschool Enrollment - Grade 11</h5>
+    </div>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label class="Name">First Name</label>
+      <br>
+      <input type="text" required placeholder="Enter First Name" name="fname">
+      <br>
+      <br>
+      <label>Last Name</label>
+      <br>
+      <input type="text" required placeholder="Enter Last Name" name="lname">
+      <br>
+      <br>
+      <label>Middle Initial</label>
+      <br>
+      <input type="text" required placeholder="Enter Middle Name" name="mname">
+      <br>
+      <br>
+      <label>Email Address</label>
+      <br>
+      <input type="email" required placeholder="you@example.com" name="mail">
+      <br>
+      <br>
+      <label>Password</label>
+      <br>
+      <input type="password" required minlength="8" maxlength="8" placeholder="Create a password" name="pass">
+      <br>
+      <br>
+      <label>Age</label>
+      <br>
+      <input type="number" required placeholder="e.g. 16" name="age">
+      <br>
+      <br>
+      <label>Birthday</label>
+      <br>
+      <input type="date" required name="date">
+      <br>
+      <br>
+      <label>Contact Number</label>
+      <br>
+      <input type="number" required placeholder="09xxxxxxxxx" name="num">
+      <br>
+      <br>
+    </fieldset>
+  </form>
+
+  <fieldset>
+    <legend>Student Information</legend>
+    <label>Student ID</label>
+    <br>
+    <input type="number" required placeholder="e.g. 2562M00242" name="id">
+    <br>
+    <br>
+    <label>Grade Level</label>
+    <br>
+    <select>
+      <option>Select Grade Level</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+      <option>11</option>
+      <option>12</option>
+    </select>
+    <br>
+    <br>
+    <label>Strand</label>
+    <br>
+    <select>
+      <option>Select Strand</option>
+      <option>TVL</option>
+      <option>ABM</option>
+      <option>HUMMS</option>
+      <option>STEM</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>Additional Information</legend>
+    <label>Gender</label>
+    <br>
+    <input type="radio" name="gender">Male
+    <input type="radio" name="gender">Female
+    <input type="radio" name="gender">Prefer not to say
+    <br>
+    <br>
+    <label>Hobbies</label>
+    <br>
+    <input type="checkbox" name="hobbies">Reading
+    <input type="checkbox" name="hobbies">Coding
+    <input type="checkbox" name="hobbies">Playing Sports
+    <input type="checkbox" name="hobbies">Watching Movies
+    <input type="checkbox" name="hobbies">Playing Games
+    <input type="checkbox" name="hobbies">Music
+    <br>
+    <br>
+    <label>Complete Address</label>
+    <br>
+    <textarea rows="5" cols="60" placeholder="House No., Street, Barangay, City/Municipality, Province"></textarea>
+    <h6>Maximum of 250 characters</h6>
+  </fieldset>
+  <br>
+  <button>Submit</button>
+  <button type="reset">Reset</button>
+
+</body>
+</html>
